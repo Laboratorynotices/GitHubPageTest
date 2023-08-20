@@ -77,6 +77,4 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
       <HelloWorld msg="You did it!" />
     </div>
   </header>
-
-  <RouterView />
 </template>
