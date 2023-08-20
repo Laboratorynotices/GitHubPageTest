@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import DummyComponent from '@/components/DummyComponent.vue';
-import NavBar from '@/components/layouts/constrained/NavBar.vue';
+import NavBar from '@/components/LayoutsConstrainedNavBar.vue';
 </script>
 
 <template>
