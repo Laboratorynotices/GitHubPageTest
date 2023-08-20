@@ -75,14 +75,6 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
-
-      <nav class="old">
-        <RouterLink
-          v-for="(navElement, i) in navElements"
-          :key="i"
-          :to="navElement.path"
-        >{{ navElement.nameMenu }}</RouterLink>
-      </nav>
     </div>
   </header>
 
