@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import DummyComponent from '@/components/DummyComponent.vue';
 import NavBar from '@/components/LayoutsConstrainedNavBar.vue';
 </script>
 
@@ -38,4 +39,6 @@ import NavBar from '@/components/LayoutsConstrainedNavBar.vue';
   </v-app>
 
   <v-divider class="border-opacity-100 mt-6" color="success"></v-divider>
+
+  <dummy-component />
 </template>
