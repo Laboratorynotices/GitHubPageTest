@@ -2,8 +2,6 @@
 import { RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 import { navElements } from "@/menu-elements";
-// Удалить
-const links = ["Dashboard", "Messages", "Profile", "Updates"];
 </script>
 
 <template>
@@ -21,10 +19,6 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
             :to="navElement.path"
           >{{ navElement.nameMenu }}</v-btn>
         </nav>
-
-        <v-btn v-for="link in links" :key="link" variant="text">
-          {{ link }}
-        </v-btn>
 
         <v-spacer></v-spacer>
 
@@ -68,7 +62,7 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
     </v-main>
   </v-app>
 
-  <v-divider class="border-opacity-100" color="success"></v-divider>
+  <v-divider class="border-opacity-100 mt-6" color="success"></v-divider>
 
   <HelloWorld msg="We did it!" />
 </template>
