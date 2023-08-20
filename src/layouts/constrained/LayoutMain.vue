@@ -68,7 +68,7 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
     </v-main>
   </v-app>
 
-
+  <v-divider class="border-opacity-100" color="success"></v-divider>
 
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
