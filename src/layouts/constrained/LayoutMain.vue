@@ -88,5 +88,3 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
 
   <RouterView />
 </template>
-
-<style scoped></style>
