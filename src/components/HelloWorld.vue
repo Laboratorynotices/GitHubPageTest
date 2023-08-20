@@ -1,3 +1,3 @@
 <template>
-  You successfull
+  &nbsp;
 </template>
