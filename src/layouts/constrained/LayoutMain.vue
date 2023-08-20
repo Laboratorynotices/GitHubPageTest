@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
+import { navElements } from "@/menu-elements";
 </script>
 
 <template>
@@ -14,6 +15,12 @@ import HelloWorld from '@/components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+      <hr />
+      <RouterLink
+        v-for="(navElement, i) in navElements"
+        :key="i"
+        :to="navElement.path"
+      >{{ navElement.nameMenu }}</RouterLink>
     </div>
   </header>
 
