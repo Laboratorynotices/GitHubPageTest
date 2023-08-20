@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LayoutMain from '@/layouts/constrained/LayoutMain.vue';
+import LayoutMain from '@/components/layouts/constrained/LayoutMain.vue';
 </script>
 
 <template>

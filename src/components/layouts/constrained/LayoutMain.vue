@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
 import HelloWorld from '@/components/HelloWorld.vue';
-import NavBar from '@/layouts/constrained/NavBar.vue';
+import NavBar from '@/components/layouts/constrained/NavBar.vue';
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import NavBar from '@/layouts/constrained/NavBar.vue';
     <v-main class="bg-grey-lighten-3">
       <v-container>
         <v-row>
-          <v-col v-if="false" cols="2">
+          <v-col v-if="true" cols="2">
             <v-sheet rounded="lg">
               <v-list rounded="lg">
                 <v-list-item v-for="n in 5" :key="n" link>
