@@ -16,11 +16,13 @@ import { navElements } from "@/menu-elements";
         <RouterLink to="/about">About</RouterLink>
       </nav>
       <hr />
-      <RouterLink
-        v-for="(navElement, i) in navElements"
-        :key="i"
-        :to="navElement.path"
-      >{{ navElement.nameMenu }}</RouterLink>
+      <nav>
+        <RouterLink
+          v-for="(navElement, i) in navElements"
+          :key="i"
+          :to="navElement.path"
+        >{{ navElement.nameMenu }}</RouterLink>
+      </nav>
     </div>
   </header>
 
