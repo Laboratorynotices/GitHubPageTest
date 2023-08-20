@@ -12,11 +12,6 @@ import { navElements } from "@/menu-elements";
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      <hr />
-      <nav>
         <RouterLink
           v-for="(navElement, i) in navElements"
           :key="i"
