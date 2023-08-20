@@ -31,14 +31,12 @@ import NavBar from '@/components/LayoutsConstrainedNavBar.vue';
             <v-sheet min-height="70vh" rounded="lg">
               <!-- Подключение страниц маршрутизатором из файла App.vue -->
               <router-view />
+
+              <dummy-component />
             </v-sheet>
           </v-col>
         </v-row>
       </v-container>
     </v-main>
   </v-app>
-
-  <v-divider class="border-opacity-100 mt-6" color="success"></v-divider>
-
-  <dummy-component />
 </template>
