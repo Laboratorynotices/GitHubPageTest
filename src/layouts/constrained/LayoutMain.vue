@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { RouterView } from 'vue-router';
+import HelloWorld from '@/components/HelloWorld.vue';
 import NavBar from '@/layouts/constrained/NavBar.vue';
 </script>
 
@@ -38,4 +39,6 @@ import NavBar from '@/layouts/constrained/NavBar.vue';
   </v-app>
 
   <v-divider class="border-opacity-100 mt-6" color="success"></v-divider>
+
+  <HelloWorld msg="We did it!" />
 </template>
