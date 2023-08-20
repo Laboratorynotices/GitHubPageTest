@@ -76,7 +76,7 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
 
-      <nav>
+      <nav class="old">
         <RouterLink
           v-for="(navElement, i) in navElements"
           :key="i"
@@ -100,28 +100,28 @@ header {
   margin: 0 auto 2rem;
 }
 
-nav {
+nav.old {
   width: 100%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
+nav.old a.router-link-exact-active {
   color: var(--color-text);
 }
 
-nav a.router-link-exact-active:hover {
+nav.old a.router-link-exact-active:hover {
   background-color: transparent;
 }
 
-nav a {
+nav.old a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }
 
-nav a:first-of-type {
+nav.old a:first-of-type {
   border: 0;
 }
 
@@ -142,7 +142,7 @@ nav a:first-of-type {
     flex-wrap: wrap;
   }
 
-  nav {
+  nav.old {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
