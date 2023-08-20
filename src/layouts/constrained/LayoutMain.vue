@@ -40,5 +40,5 @@ import NavBar from '@/layouts/constrained/NavBar.vue';
 
   <v-divider class="border-opacity-100 mt-6" color="success"></v-divider>
 
-  <HelloWorld msg="We did it!" />
+  <HelloWorld />
 </template>
