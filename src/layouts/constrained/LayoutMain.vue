@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import HelloWorld from '@/components/HelloWorld.vue'
 import { navElements } from "@/menu-elements";
 // Удалить
@@ -15,11 +15,11 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
 
         <!-- Навигация из файла App.vue -->
         <nav>
-          <RouterLink
+          <v-btn
             v-for="(navElement, i) in navElements"
             :key="i"
             :to="navElement.path"
-          >{{ navElement.nameMenu }}</RouterLink>
+          >{{ navElement.nameMenu }}</v-btn>
         </nav>
 
         <v-btn v-for="link in links" :key="link" variant="text">
