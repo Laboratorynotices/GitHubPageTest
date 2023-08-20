@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router';
+import { RouterLink, RouterView } from 'vue-router'
+import HelloWorld from '@/components/HelloWorld.vue'
 import { navElements } from "@/menu-elements";
 // Удалить
 const links = ["Dashboard", "Messages", "Profile", "Updates"];
@@ -69,7 +70,5 @@ const links = ["Dashboard", "Messages", "Profile", "Updates"];
 
   <v-divider class="border-opacity-100" color="success"></v-divider>
 
-  <header>
-    <div class="wrapper"></div>
-  </header>
+  <HelloWorld msg="We did it!" />
 </template>
